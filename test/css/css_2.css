@@ -1,0 +1,67 @@
+body{
+	padding-top: 50px;
+	margin: 0;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.contentBox{
+	padding: 20px 0px;
+	text-align: center;
+}
+/*动画*/
+.box{
+	width: 400px;
+	height: 400px;
+	border: 2px solid black;
+	margin: 10px auto;
+}
+.box ul{
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	margin: 50px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 300px;
+	color: white;
+	font-weight: 700;
+	position: relative;
+	transform-style: preserve-3d;
+}
+.box ul li{
+	width: 300px;
+	height: 300px;
+	list-style-type: none;
+	position: absolute;
+	
+}
+.box ul li:nth-of-type(1){
+	background-color: pink;
+	opacity: 0.4;/*透明度*/
+}
+.box ul li:nth-of-type(2){
+	background-color: black;
+	opacity: 0.4;/*透明度*/
+	transform: translateX(300px)rotateY(90deg);
+	transform-origin: left;
+}
+.box ul li:nth-of-type(3){
+	background-color: darkkhaki;
+	opacity: 0.4;/*透明度*/
+}
+.box ul li:nth-of-type(4){
+	background-color: cornflowerblue;
+	opacity: 0.4;/*透明度*/
+}
+.box ul li:nth-of-type(5){
+	background-color: darkslategray;
+	opacity: 0.4;/*透明度*/
+}
+.box ul li:nth-of-type(6){
+	background-color: greenyellow;
+	opacity: 0.4;/*透明度*/
+}
+
+

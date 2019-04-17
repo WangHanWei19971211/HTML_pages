@@ -1,0 +1,55 @@
+.container{
+	margin-top: 30px;
+}
+.row{
+	margin-bottom: 15px;
+}
+.container:nth-of-type(2) .row:nth-of-type(1) img{
+	margin-top: 15px;
+}
+.container .col-md-3>img{
+	cursor: pointer;  
+    transition: all 0.6s;
+}
+.container .col-md-3>img:hover{
+	transform: scale(1.1); 
+}
+.container:nth-of-type(1){
+	width: 100%;
+	height: 600px;
+}
+.container:nth-of-type(1) .row>div{
+	height: 600px;
+}
+.container:nth-of-type(1) .row>div>div{
+	height: 200px;
+}
+.container:nth-of-type(1) .row>div>div>div{
+	line-height: 200px;
+	text-align: center;
+	height: 200px;
+	background-color: white;
+	border: 1px solid gainsboro;
+}
+.container:nth-of-type(1) .list-group{
+	margin-top: 0px;
+}
+.container:nth-of-type(1) .list-group .list-group-item{
+	height: 61px;
+	background-color: white;
+	cursor:pointer;
+}
+.container:nth-of-type(1) .col-md-3{
+	padding-left: 15px;
+	padding-right: 0px;
+}
+.container:nth-of-type(1) .col-md-9{
+	padding-right: 0px;
+}
+
+.container:nth-of-type(1) .list-group .list-group-item .liBox{
+	display: none;
+}
+
+
+

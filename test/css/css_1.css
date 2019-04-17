@@ -1,0 +1,149 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.back{
+	color: #5F5E5E;
+	float: right;
+	padding: 5px;
+	font-size: 15px;
+	width: 60px;
+	height: 20px;
+	background-color: rgba(255,255,255,0.5);
+	line-height: 20px;
+	align-content: center;
+	/*cursor:pointer;//手型。这里直接设置在css中 display: none就不起作用了，所以放在js中，显示后添加该属性*/
+	display: none;
+	z-index: 100;//*使div在最上面*/
+}
+.content{
+	height: 1800px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.header{
+	width: 100%;
+}
+.header .top{
+	height: 450px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1);
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*导航*/
+	.header .mymenu{
+		height: 30px;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 1);
+		z-index: 80;
+	}
+	.mymenu .menu_inner{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	#fixedMenu{/*固定的导航*/
+		position: fixed;
+		top: 0px;
+		float: left;
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+	}
+	.header .menu_ul,
+	.header .menu_ul ul{
+		list-style-type: none;
+	}
+	.header .menu_ul>li{
+		position: relative;
+		float: left;
+		margin-left: 10px;
+		line-height: 30px;
+	}
+	.header .menu_ul>li>a{/*导航栏的a标签*/
+		color: #5F5E5E;
+		text-decoration: none;
+	}
+	.header .menu_ul>li>a:hover{
+		color: black;
+	}
+	.header .menu_ul>li>div{/*子菜单盒子*/
+		position: absolute;
+		top:30px;
+		left: -10px;
+		width: 50px;
+		background-color:  rgba(255, 255, 255, 0.5);
+		display: none;/*隐藏*/
+		z-index: 100;
+		box-shadow: 0 1px 2px 0 rgba(0,0,0,0.35);
+	}
+	.header .menu_ul>li>div>a{/*子菜单盒子中的标签*/
+		margin-left: 10px;
+		color: #5F5E5E;
+		text-decoration: none;
+		float: left;
+	}
+	.header .menu_ul>li>div>a:hover{
+		color: black;
+	}
+	
+	
+.container{
+	background-color: #CCCCCC;
+}
+.row{
+	margin-bottom: 15px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+.box2{
+	height: 300px;
+}
+.box2_content{
+	position: relative;/*使子元素<span>(设置了position:absolute)能相对这个元素定位*/
+	background-color: antiquewhite;
+	height: 250px;
+	background-image: url(../img/pic01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.box2_bottom{
+	background-color: white;
+	height: 49px;
+	text-align: center;
+	line-height: 50px;
+	background-image: url(../img/pic02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.box2_text{
+	outline: none;/*去掉input标签自带边框*/
+	vertical-align: middle;
+	height: 23px;
+	width: 160px;
+	border:1px solid rgba(225, 225, 255, 1) ;
+}
+#box2_text_focus{
+	background-color: #FFF2DB;;
+	border:1px solid #CAB7CF;
+}
+.box2_btn{
+	outline: none;/*去掉input标签自带边框*/
+	color: #5F5E5E;
+	background-color: wheat;
+	width: 80px;
+	height: 25px;
+	vertical-align: middle;
+	border:1px solid rgba(225, 225, 255, 1) ;
+}
+#box2_btn_down{
+	background-color:#E7D2AB;
+	border:1px solid white;
+	color: black;
+}
